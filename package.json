@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "nodemon api-service/app.js",
+    "worker:assign": "nodemon assignment-worker/worker.js",
+    "worker:audit": "nodemon audit-worker/worker.js"
   },
   "repository": {
     "type": "git",
