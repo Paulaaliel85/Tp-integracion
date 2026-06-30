@@ -1,0 +1,2 @@
+{"eventId":"195c6998-dc43-4e94-ba1a-28f4b8b05e16","type":"ticket.created","occurredAt":"2026-06-30T20:13:14.631Z","version":1,"payload":{"ticketId":"TCK-1782850394636","title":"No puedo ingresar","description":"Error 403","priority":"high"}}
+{"eventId":"195c6998-dc43-4e94-ba1a-28f4b8b05e16","type":"ticket.assigned","occurredAt":"2026-06-30T20:13:14.702Z","version":1,"payload":{"ticketId":"TCK-1782850394636","title":"No puedo ingresar","description":"Error 403","priority":"high","assignedTo":"Soporte Nivel 1"}}
