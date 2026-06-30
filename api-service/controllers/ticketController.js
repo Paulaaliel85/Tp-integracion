@@ -19,6 +19,11 @@ const crearTicket = (req, res) => {
     };
 
     const channel = getChannel();
+    if (!channel) {
+    return res.status(500).json({
+        mensaje: "RabbitMQ no está disponible."
+    });
+}
 
     channel.publish(
         process.env.EXCHANGE_NAME,
@@ -26,7 +31,7 @@ const crearTicket = (req, res) => {
         Buffer.from(JSON.stringify(evento))
     );
 
-    console.log("📨 Evento publicado:");
+    console.log(" Evento publicado:");
     console.log(evento);
 
     res.status(201).json({
