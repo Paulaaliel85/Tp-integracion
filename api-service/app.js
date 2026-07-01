@@ -1,11 +1,8 @@
 require("dotenv").config();
 
 const express = require("express");
-
 const ticketRoutes = require("./routes/ticketRoutes");
-
 const { connectRabbitMQ } = require("./rabbitmq/connection");
-
 const app = express();
 
 app.use(express.json());

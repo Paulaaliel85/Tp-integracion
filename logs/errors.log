@@ -1,0 +1,3 @@
+{"eventId":"7917787e-1fb9-41c2-b9eb-bfd452382846","type":"ticket.created","occurredAt":"2026-06-30T20:39:48.205Z","version":1,"payload":{"ticketId":"TCK-1782851988208","title":"Servidor caído","description":"No responde","priority":"critical"}}
+{"eventId":"aa452bf4-66e1-4d09-a621-ee678897b464","type":"ticket.created","occurredAt":"2026-06-30T20:41:49.370Z","version":1,"payload":{"ticketId":"TCK-1782852109373","title":"Servidor caído","description":"No responde","priority":"critical"}}
+{"eventId":"481c807c-7b42-419a-9cd3-28ba8bffd6fa","type":"ticket.created","occurredAt":"2026-07-01T01:58:11.083Z","version":1,"payload":{"ticketId":"TCK-1782871091085","title":"Servidor caído","description":"No responde","priority":"critical"}}

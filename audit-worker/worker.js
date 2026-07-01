@@ -6,17 +6,17 @@ const connectRabbitMQ = require("./rabbitmq");
 
 async function iniciarAuditWorker() {
 
-    const { channel, queue } = await connectRabbitMQ();
+const { channel, queue } = await connectRabbitMQ();
 
-    console.log("📝 Audit Worker iniciado...");
+    console.log(" Audit Worker iniciado...");
 
     channel.consume(queue, (msg) => {
 
         if (!msg) return;
 
-        const evento = JSON.parse(msg.content.toString());
+const evento = JSON.parse(msg.content.toString());
 
-        console.log("📝 Evento registrado:", evento.type);
+        console.log(" Evento registrado:", evento.type);
 
         fs.appendFileSync(
             "./logs/audit.log",

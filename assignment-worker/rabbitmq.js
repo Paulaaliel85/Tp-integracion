@@ -22,11 +22,10 @@ async function connectRabbitMQ() {
     await channel.bindQueue(
         queue,
         process.env.EXCHANGE_NAME,
-        "ticket.created"
+        "ticket.created.#"
     );
 
     return { channel, queue };
 
 }
-
 module.exports = connectRabbitMQ;

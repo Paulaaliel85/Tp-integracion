@@ -2,9 +2,7 @@ const amqp = require("amqplib");
 require("dotenv").config();
 
 async function connectRabbitMQ() {
-
     const connection = await amqp.connect(process.env.RABBITMQ_URL);
-
     const channel = await connection.createChannel();
 
     await channel.assertExchange(
@@ -16,7 +14,6 @@ async function connectRabbitMQ() {
     );
 
     const queue = "helpdesk.audit";
-
     await channel.assertQueue(queue, {
         durable: true
     });

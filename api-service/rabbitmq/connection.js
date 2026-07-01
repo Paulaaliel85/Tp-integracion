@@ -23,11 +23,9 @@ async function connectRabbitMQ() {
         console.error("Error al conectar RabbitMQ:", error);
     }
 }
-
 function getChannel() {
     return channel;
 }
-
 module.exports = {
     connectRabbitMQ,
     getChannel
